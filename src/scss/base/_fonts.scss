@@ -1,0 +1,25 @@
+$font-path: '../assets/fonts';
+
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$font-path}/noticiatext-regular-webfont.eot');
+  src:
+    url('#{$font-path}/noticiatext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/noticiatext-regular-webfont.woff2') format('woff2'),
+    url('#{$font-path}/noticiatext-regular-webfont.woff') format('woff'),
+    url('#{$font-path}/noticiatext-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noticia Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url('#{$font-path}/noticiatext-bold-webfont.eot');
+  src:
+    url('#{$font-path}/noticiatext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-path}/noticiatext-bold-webfont.woff2') format('woff2'),
+    url('#{$font-path}/noticiatext-bold-webfont.woff') format('woff'),
+    url('#{$font-path}/noticiatext-bold-webfont.ttf') format('truetype');
+}

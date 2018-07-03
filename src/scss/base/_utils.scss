@@ -1,0 +1,23 @@
+@function get($map, $key: 'default') {
+  @return map-get($map, $key);
+}
+
+%margin-clean {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+%margin-clean-horizontal {
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
