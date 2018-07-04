@@ -30,7 +30,7 @@ module.exports = {
         loader: 'file-loader',
         include: path.resolve(__dirname, 'src/assets/img'),
         options: {
-          name: '[name].[ext]',
+          name: '[hash].[ext]',
           outputPath: 'img/',
           publicPath: 'img/'
         }
@@ -44,7 +44,7 @@ module.exports = {
         loader: 'file-loader',
         include: path.resolve(__dirname, 'src/assets/fonts'),
         options: {
-          name: '[name].[ext]',
+          name: '[hash].[ext]',
           outputPath: 'fonts/',
           publicPath: 'fonts/'
         }
