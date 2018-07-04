@@ -2,8 +2,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 module.exports = {
   entry: './src/js/index.js',
@@ -11,10 +9,6 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
-  },
-  devServer: {
-    contentBase: '/dist/',
-    publicPath: '/',
   },
   module: {
     rules: [
@@ -64,12 +58,5 @@ module.exports = {
       template: './src/html/index.html',
       filename: 'index.html',
     }),
-    new OptimizeCssAssetsPlugin(),
-    new ImageminPlugin({
-      disable: process.env.NODE_ENV !== 'production',
-      pngquant: {
-        quality: '95-100',
-      }
-    })
-  ]
+  ],
 };

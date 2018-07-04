@@ -18,8 +18,8 @@
   "homepage": "https://github.com/joannaerd/webpack-boilerplate#readme",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
+    "build": "webpack --config webpack.prod.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js"
   },
   "browserslist": [
     "> 1%",
@@ -50,6 +50,7 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
   }
 }
