@@ -26,12 +26,17 @@ body {
   @extend %font-text;
 }
 
-h1, h2, h3, h4, h5, h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .heading {
   @extend %font-heading;
 }
 
-p{
+p {
   @extend %margin-clean;
 
   & + & {

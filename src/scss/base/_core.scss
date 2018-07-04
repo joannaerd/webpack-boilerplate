@@ -27,17 +27,11 @@ body {
 a,
 input,
 button,
-textarea,
-select {
+textarea {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
-
-  &:focus,
-  &:active {
-    outline: 0;
-  }
 }
 
 button {
@@ -53,4 +47,15 @@ textarea {
   @extend %font-default;
 
   box-sizing: border-box;
+}
+
+a,
+input,
+button,
+textarea,
+select {
+  &:focus,
+  &:active {
+    outline: 0;
+  }
 }
