@@ -46,10 +46,6 @@ button {
   font-size: get($font-sizes, 'small');
   cursor: pointer;
   background: none;
-
-  &::-moz-focus-inner {
-    border: 0;
-  }
 }
 
 input,

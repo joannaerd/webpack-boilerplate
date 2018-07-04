@@ -3,22 +3,35 @@
   "author": "Joanna Erd",
   "version": "1.0.0",
   "description": "Simple Webpack 4 setup",
-  "main": "index.js",
-  "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joannaerd/webpack-boilerplate.git"
   },
-  "keywords": ["webpack", "boilerplate"],
+  "keywords": [
+    "webpack",
+    "boilerplate"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/joannaerd/webpack-boilerplate/issues"
   },
   "homepage": "https://github.com/joannaerd/webpack-boilerplate#readme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "devDependencies": {
+    "autoprefixer": "^8.6.4",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
@@ -31,6 +44,8 @@
     "imagemin-webpack-plugin": "^2.1.5",
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.3",
+    "postcss-loader": "^2.1.5",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "webpack": "^4.14.0",
