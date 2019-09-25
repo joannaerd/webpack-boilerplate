@@ -1,5 +1,5 @@
 # webpack-boilerplate
-Simple Webpack 4 setup
+Simple Webpack 4 setup by [Joanna Erd](https://github.com/joannaerd)
 
 ##includes:
  - Babel
