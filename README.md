@@ -1,7 +1,7 @@
 # webpack-boilerplate
 Simple Webpack 4 setup by [Joanna Erd](https://github.com/joannaerd)
 
-##includes:
+## includes:
  - Babel
  - SCSS
  - image loading
